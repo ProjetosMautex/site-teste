@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar';
+import Hero from '../components/Hero';
+import Features from '../components/Features';
+---
+
+<Layout title="Site de Teste - Astro + Bun + React">
+	<Navbar client:load />
+	<main>
+		<Hero client:visible />
+		<Features client:visible />
+	</main>
+	
+	<footer>
+		<div className="container footer-content">
+			<p>&copy; 2026 AstroBun Test Site. Desenvolvido com Antigravity.</p>
+		</div>
+	</footer>
+
+	<style>
+		footer {
+			padding: 4rem 0;
+			border-top: 1px solid var(--glass-border);
+			text-align: center;
+			color: var(--text-muted);
+			font-size: 0.875rem;
+		}
+	</style>
+</Layout>
