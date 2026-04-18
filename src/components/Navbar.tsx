@@ -21,6 +21,7 @@ const Navbar = () => {
         
         <div className={styles.links}>
           <a href="/" className={styles.link}>Início</a>
+          <a href="/blog" className={styles.link}>Blog</a>
           <a href="/teste-de-outlines" className={styles.link}>Outlines</a>
           <a href="#" className={styles.link}>Sobre</a>
           <a href="#" className={styles.btn}>
